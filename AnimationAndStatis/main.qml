@@ -34,14 +34,36 @@ Window {
                 when: mousArea.pressed
                 PropertyChanges {
                     target: rect
-                    color: "green"
+                    color:"red"
                     scale: "2.0"
 
                 }
             }
+        transitions: Transition {
+            from: "*"
+            to: "pressed"
+            reversible: true;
+            SequentialAnimation{        //默认时并发执行,显示指定顺序
+                NumberAnimation{
+                    property: "scale"
+                    easing.type: Easing.InOutBack
+                    duration: 2000
+                }
 
+                ColorAnimation {
+                    from:"green"
+                    to:"red"
+                    duration: 2000
+                }
+                RotationAnimation{
+                    target: rect
+                    from :0
+                    to:360
+                    duration: 2000
 
-
+                }
+            }
+        }
 
     }
 }
