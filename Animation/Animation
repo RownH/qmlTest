@@ -1,0 +1,43 @@
+ 
+Qt Quick提供的基本动画对象
+PropertyAnimation 
+
+NumberAnimation，PropertyAnition的派生类，专门改变数字类型的property来产生动画，效率
+ColorAnimation propertyAnition的派生类，专门改变Color类型来产生动画
+RotationAnimation 专门改变rotation的值
+PathAnimation 
+让对象沿一个给定的路径运动
+smoothedAnimation 允许一个property跟踪一个值，产生平滑动画
+SpringAnimation 允许一个property跟踪一个值，动画类似弹簧效果
+
+除了上面提到的动画对象，还有一些对象本身不时直接的动画元素，但确实有些QML能够动起来的基础
+
+State,Item状态，不同的状态对应不同的界面效果和业务逻辑，可以将动画应用于不同状态间的迁移过程
+Transtion 过度，衔接item的状态和动作，使状态变化过程平滑
+还有一些动画元素，需要和其他动画对象结合此啊能产生较好的效果，我们称之为 协同动画元素。比如:
+
+Behavior,为Item的property变化绑定一个默认动画兑现嗯
+ParentAnimation 在改变一个item的oarent时使用，使得该item从旧的parent移动到新的parent过程更平滑
+通常与Transtion ，State，Parentchange联合使用
+
+AnchorAnimation：在改变一个item的anchor使用，平滑变化过程。
+
+PauseAnimation 在动画过程中插入他。可以将动画过程暂停一段时间
+PropertyAction 在动画执行过程中立即改变某个属性
+ScriptAction 在动画执行过程中运行一段ECMAScript脚本
+
+基本的动画元素 AnchorAnimation 
+    running 布尔值 指示动画是否在运行，默认值时false 设置true会启动动画，为false会停止动画，你可以读取他的值来判断停止动画
+    你可以读取他的值来判断动画当前是否在运行，也可以给他绑定一个表达式，当表达式的值为true时 动画自动执行，start()方法会置为true
+    stop方法会变成false
+    loops 动画的执行次数，默认为;给他复制Animation.infinite会导致动画循环执行永不停歇
+    paused 展厅 调用pause()会置为true
+    alwaysRunToEnd 布尔值 指示在显示的通知动画停止时是否把动画过程执行完，既不按调用stop或者设置running为false 动画都会执行完
+    
+    Animation的方法
+    start()开始
+    stop()停止
+    restart()重新开始
+    pause()暂停
+    resume()继续执行
+    complete()完成一个动画
