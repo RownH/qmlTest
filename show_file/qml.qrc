@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>icon/txtFile.png</file>
+        <file>icon/font_size_down.png</file>
+        <file>icon/font_size_up.png</file>
+        <file>icon/fontAdd.png</file>
+        <file>icon/imageFile.png</file>
+        <file>icon/musicFile.png</file>
+        <file>icon/textBackGroundColor.png</file>
+        <file>icon/textColor.png</file>
+        <file>icon/videoFile.png</file>
+    </qresource>
+</RCC>
