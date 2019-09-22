@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>DeleGate.qml</file>
+        <file>sources.xml</file>
+    </qresource>
+</RCC>

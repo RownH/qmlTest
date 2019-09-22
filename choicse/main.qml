@@ -1,7 +1,6 @@
 import QtQuick 2.12
 import QtQuick.Window 2.12
 import QtQuick.Layouts 1.1
-import QtQuick.Dialogs 1.2 as Dc
 Window {
     visible: true
     width: 640
@@ -41,7 +40,7 @@ Window {
             id: number
             text: Math.ceil((Math.random(0)*100))
             font{
-                pixelSize: 17
+                pixelSize: 50
             }
             color:"gray";
             anchors.centerIn: parent
@@ -147,6 +146,9 @@ Window {
     BtnDialog{
         id:btnDialog;
         color:"white";
+        x:root.x+root.width/2-width/2;
+        y:root.y+root.height/2-height/2;
+
         number: 0
         onGoCheck: {
             var newOne={"col":color.toString(),"number":number.text};

@@ -5,6 +5,7 @@ Window {
    id: eo_askDialog
    width: 300
    height: 200
+
    modality: Qt.ApplicationModal
    property  var number;
    property  var color;
