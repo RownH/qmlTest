@@ -1,8 +1,6 @@
 import QtQuick 2.0
 
 Rectangle{
-    width:150;
-    height: 150;
     border.color: view.num==index?"red":"orange";
     border.width: 2;
     color:"black";

@@ -9,9 +9,11 @@ Window {
     width: 640
     height: 480
     title: qsTr("Hello World")
-    TextArea{
-        text: "            delegate.width=root.width-2/5*parent.width;\n                delegate.height=root.height-2/5.0*parent.height;\n                onExited: {            delegate.width=root.width-2/5*parent.width;\n                delegate.height=root.height-2/5.0*parent.height;\n                onExited: {            delegate.width=root.width-2/5*parent.width;\n                delegate.height=root.height-2/5.0*parent.height;\n                onExited: {            delegate.width=root.width-2/5*parent.width;\n                delegate.height=root.height-2/5.0*parent.height;\n                onExited: {            delegate.width=root.width-2/5*parent.width;\n                delegate.height=root.height-2/5.0*parent.height;\n                onExited: {            delegate.width=root.width-2/5*parent.width;\n                delegate.height=root.height-2/5.0*parent.height;\n                onExited: {            delegate.width=root.width-2/5*parent.width;\n                delegate.height=root.height-2/5.0*parent.height;\n                onExited: {            delegate.width=root.width-2/5*parent.width;\n                delegate.height=root.height-2/5.0*parent.height;\n                onExited: {            delegate.width=root.width-2/5*parent.width;\n                delegate.height=root.height-2/5.0*parent.height;\n                onExited: {            delegate.width=root.width-2/5*parent.width;\n                delegate.height=root.height-2/5.0*parent.height;\n                onExited: {            delegate.width=root.width-2/5*parent.width;\n                delegate.height=root.height-2/5.0*parent.height;\n                onExited: {"
+    TextEdit{
+        text: "sadasdasdasdasaaaaaaaaaddddddddddddddddddddddddddddddddddddddddddddddddddasddsadasdasdasdadas\\b\\nasdasdasdasdasdasdasdas"
+
         anchors.fill: parent;
+
     }
 
 }

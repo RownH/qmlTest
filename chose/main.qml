@@ -13,9 +13,8 @@ Window {
         source: "./sources.xml"
         query: "/rss/channel/item"
         XmlRole { name: "name"; query: "name/string()" }
-        XmlRole { name: "imageSource"; query: "imageSource/string()" }
+        XmlRole { name: "imageSource"; query: "imageSource/string()"}
     }
-
 
     GridView{
         id:view;
@@ -26,9 +25,11 @@ Window {
         anchors.margins: 50;
         cellWidth:100;
         cellHeight:100;
-        delegate: DeleGate{}
+        delegate: DeleGate{
+            width: 150;
+            height: 150;
+        }
         model:model;
-
     }
 
     Rectangle {
